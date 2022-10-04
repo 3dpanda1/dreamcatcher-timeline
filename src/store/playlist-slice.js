@@ -3,7 +3,11 @@ import {createSlice } from "@reduxjs/toolkit";
 const ytToEmbed = (url)=>{
   const regexp = /(?:youtube(?:-nocookie)?\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]vi?=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
   const data = url.match (regexp);
-  return data[1] ? ('https://www.youtube.com/embed/'+data[1]) : url;
+  if(data){
+    return data[1] ? ('https://www.youtube.com/embed/'+data[1]) : url;
+  }else{
+    return url;
+  }
 }
 
 const playlistSlice = createSlice(
