@@ -16,18 +16,18 @@ p {
   position: absolute;
   top:0px;
   left: 0px;
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
   background-image: url(https://files.catbox.moe/zdmd5d.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 180%;
+  background-size: 100%;
 }
 
 .base-gradient{position: absolute;
   top:0px;
   left: 0px;
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
   background: radial-gradient(ellipse 80% 30% at bottom, #ffffff 40%, transparent 200%);
 }
