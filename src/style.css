@@ -9,7 +9,27 @@ p {
   top:0px;
   left: 0px;
   width: 100vw;
+  height: 100vh; 
+}
+
+.base-background{
+  position: absolute;
+  top:0px;
+  left: 0px;
+  width: 100vh;
   height: 100vh;
+  background-image: url(https://files.catbox.moe/zdmd5d.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 180%;
+}
+
+.base-gradient{position: absolute;
+  top:0px;
+  left: 0px;
+  width: 100vh;
+  height: 100vh;
+  background: radial-gradient(ellipse 80% 30% at bottom, #ffffff 40%, transparent 200%);
 }
 
 .background-canvas {

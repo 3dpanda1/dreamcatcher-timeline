@@ -14,6 +14,9 @@ export default function App() {
   
   return (
     <div className = "base-page">
+      <div className="base-background" >
+        <div className="base-gradient"/>
+      </div>
       <div className="albums-main">
         <AlbumBackground />
         <PileAlbums />
