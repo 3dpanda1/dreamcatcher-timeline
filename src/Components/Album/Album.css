@@ -1,0 +1,80 @@
+.album {
+  height: 10px;
+  padding-right: 80%;
+  transform: rotateX(60deg) rotate(-45deg);
+}
+  
+.album-shadow-container{
+  position: absolute;
+  max-height: 100px;
+  max-width: 100px;
+  height: 15vw;
+  width: 15vw;
+  z-index: -1;
+}
+  
+.album-shadow {
+  position: absolute;
+  max-height: 100px;
+  max-width: 100px;
+  height: 15vw;
+  width: 15vw;
+  box-shadow: -15px 15px 20px rgb(0, 0, 0);
+}
+    
+.album:hover .album-shadow{
+  position: absolute;
+  bottom: -30%;
+  left: 13%;
+  max-height: 100px;
+  max-width: 100px;
+  height: 15vw;
+  width: 15vw;
+  color: none;
+  background-color: none;
+  color-scheme: none;
+  transform: rotateX(70deg) rotate(-10deg);
+  box-shadow: -30px -1px 20px rgb(0, 0, 0);
+}
+  
+.album-selected .album-shadow{
+  position: absolute;
+  bottom: -30%;
+  left: 13%;
+  max-height: 100px;
+  max-width: 100px;
+  height: 15vw;
+  width: 15vw;
+  color: none;
+  background-color: none;
+  color-scheme: none;
+  transform: rotateX(70deg) rotate(-10deg);
+  box-shadow: -30px -1px 20px rgb(0, 0, 0);
+}
+  
+.album:hover {
+  height: 10px;
+  padding: 0%;
+  transform: rotateX(0deg) rotate(0deg);
+  margin-bottom: 75%;
+  margin-top: 45%;
+}
+  
+.album-selected {
+  height: 10px;
+  transform: rotateX(0deg) rotate(0deg);
+  margin-bottom: 75%;
+  margin-top: 45%;
+}
+  
+.album-base {
+  margin-bottom: 0%;
+}
+  
+.album-base-selected {
+  margin-bottom: 45%;
+}
+
+.album-base:hover {
+  margin-bottom: 45%;
+}

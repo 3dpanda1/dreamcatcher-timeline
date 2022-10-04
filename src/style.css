@@ -3,3 +3,138 @@ p {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+.base-page{
+  position: absolute;
+  top:0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.background-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  color: rgba(0, 0, 0, 0);
+}
+
+.albums-main {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  margin: 0%;
+  border: none;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+  background-color: rgba(0, 132, 255, 0.466);
+}
+
+.center-cropped {
+  object-fit: cover; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+  max-height: 100px;
+  max-width: 100px;
+  height: 15vw;
+  width: 15vw;
+}
+
+
+.album-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10vh;
+}
+
+.album-display {
+  display: flex;
+  width: 10%;
+  height: 80%;
+  margin-top: 10vh;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  background-color: rgba(1, 1, 1, 0.15);
+  justify-content: center;
+}
+
+.songs-container {
+  display: flex;
+  width: 60%;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  margin-right: 0px;
+  z-index: 10;
+  background-color: rgba(1, 1, 1, 0.15);
+}
+
+.songs-container p {
+  margin-left: 30px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  border: none;
+  padding: none;
+}
+
+.corner-borders {
+  background: linear-gradient(to right, black 2px, transparent 2px) 0 0,
+    linear-gradient(to right, black 2px, transparent 2px) 0 100%,
+    linear-gradient(to left, black 2px, transparent 2px) 100% 0,
+    linear-gradient(to left, black 2px, transparent 2px) 100% 100%,
+    linear-gradient(to bottom, black 2px, transparent 2px) 0 0,
+    linear-gradient(to bottom, black 2px, transparent 2px) 100% 0,
+    linear-gradient(to top, black 2px, transparent 2px) 0 100%,
+    linear-gradient(to top, black 2px, transparent 2px) 100% 100%;
+  padding: 2px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+button {
+  background-color: rgba(240, 248, 255, 0.24);
+  border: none;
+}
+
+button:hover {
+  background-color: rgb(240, 248, 255);
+  border: 1px solid white;
+  box-shadow: -4px 4px 5px rgba(0, 0, 0, 0.329);
+  margin-bottom: 4px;
+  margin-left: 4px;
+}
+
+button:active {
+  background-color: rgba(240, 248, 255, 0.527);
+  border-radius: 5px;
+  border: none;
+}
+
+.overlay_black{
+  background: linear-gradient(to bottom, black 1vh, transparent 120vh) 0 0;
+}
+
+.full-absolute{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+}
+
+.video-container{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-white{
+  color: aliceblue;
+  text-emphasis-color: aliceblue;
+}
