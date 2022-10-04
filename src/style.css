@@ -21,7 +21,7 @@ p {
   background-image: url(https://files.catbox.moe/zdmd5d.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .base-gradient{position: absolute;
@@ -51,7 +51,6 @@ p {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: stretch;
-  background-color: rgba(0, 132, 255, 0.466);
 }
 
 .center-cropped {
@@ -79,7 +78,6 @@ p {
   margin-top: 10vh;
   margin-left: 5vh;
   margin-right: 5vh;
-  background-color: rgba(1, 1, 1, 0.15);
   justify-content: center;
 }
 
